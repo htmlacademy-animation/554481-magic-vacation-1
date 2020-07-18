@@ -10309,8 +10309,8 @@ class FullPageScroll {
     const newIndex = Array.from(this.screenElements).findIndex((screen) => location.hash.slice(1) === screen.id);
     this.activeScreen = (newIndex < 0) ? 0 : newIndex;
     if (this.lastScreen === 3) {
-      const rulesLink = document.getElementsByClassName('rules__link')[0];
-      rulesLink.style.animationPlayState = 'paused';
+      const rulesLink = document.getElementsByClassName(`rules__link`)[0];
+      rulesLink.style.animationPlayState = `paused`;
     }
     this.changePageDisplay();
   }
@@ -10451,11 +10451,11 @@ __webpack_require__.r(__webpack_exports__);
     document.body.classList.add(`loaded`);
   };
 
-  const lastRuleItem = document.getElementsByClassName('rules__item')[3];
-  const rulesLink = document.getElementsByClassName('rules__link')[0];
-  lastRuleItem.children[0].onanimationend = function (e) {
-    rulesLink.style.animationPlayState = 'running';
-  }
+  const lastRuleItem = document.getElementsByClassName(`rules__item`)[3];
+  const rulesLink = document.getElementsByClassName(`rules__link`)[0];
+  lastRuleItem.children[0].onanimationend = function () {
+    rulesLink.style.animationPlayState = `running`;
+  };
 });
 
 
