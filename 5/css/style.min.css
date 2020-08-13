@@ -977,6 +977,24 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+.accent-typography {
+  display: inline-flex;
+  overflow-y: hidden;
+  letter-spacing: 0;
+  padding: 0 0.02em; }
+  .accent-typography:not(:last-of-type) {
+    margin-right: 5px; }
+  .accent-typography > * {
+    margin: 0 -0.02em;
+    display: inline-block;
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+    transition-property: transform, opacity;
+    transition-timing-function: ease; }
+  .accent-typography--active > * {
+    transform: translate3d(0, 20%, 0);
+    opacity: 1; }
+
 @keyframes fadeInBottom {
   from {
     opacity: 0;
