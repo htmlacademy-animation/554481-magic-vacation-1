@@ -2077,7 +2077,7 @@ img {
     left: -5.9rem;
     width: 26.8rem;
     height: 104px; }
-    .prizes__item--journeys .prizes__icon > img {
+    .prizes__item--journeys .prizes__icon > svg {
       position: absolute;
       bottom: 0;
       left: 0; }
