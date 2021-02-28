@@ -1520,7 +1520,8 @@ img {
   font-weight: 400;
   font-size: 4.8rem;
   line-height: 0.906;
-  letter-spacing: 0; }
+  letter-spacing: 0;
+  width: 2.4em; }
   @media (min-width: 2000px) {
     .game__counter {
       font-size: 48px; } }
